@@ -70,3 +70,35 @@ body {
     box-shadow: 0px 0px 40px var(--neonGreen);
     cursor: pointer;
 }
+
+.divider-pc {
+    display: block;
+}
+
+.divider-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 620px) {
+    .card {
+        background-color: var(--darkGrayishBlue);
+        width: 90%;
+        min-height: 330px;
+        border-radius: 15px;
+        color: var(--lightCyan);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 38px;
+        padding-left: 38px;
+        padding-right: 38px;
+        text-align: center;
+    }
+    .divider-pc {
+        display: none;
+    }
+    .divider-mobile {
+        display: block;
+    }
+}

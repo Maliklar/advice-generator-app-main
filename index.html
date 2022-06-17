@@ -25,14 +25,15 @@
 
     <div class="card">
         <div class="card-title">
-            advice #117
+            advice # <span id="advice-id"></span>
         </div>
         <h1 class="card-content">
-            "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+            "<span id="quote"></span>"
         </h1>
-        <img src="./images/pattern-divider-desktop.svg" alt="Divider">
+        <img class="divider-pc" src="./images/pattern-divider-desktop.svg" alt="Divider-PC">
+        <img class="divider-mobile" src="./images/pattern-divider-mobile.svg" alt="Divider-Mobile">
         <div class="dice">
-            <img src="./images/icon-dice.svg" alt="dice">
+            <img onclick="getAdvice()" src="./images/icon-dice.svg" alt="dice">
         </div>
     </div>
 
@@ -42,6 +43,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
