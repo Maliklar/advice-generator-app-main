@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+:root {
+    --lightCyan: hsl(193, 38%, 86%);
+    --neonGreen: hsl(150, 100%, 66%);
+    --grayishBlue: hsl(217, 19%, 38%);
+    --darkGrayishBlue: hsl(217, 19%, 24%);
+    --darkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Dosis', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--darkBlue);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--darkGrayishBlue);
+    width: 538px;
+    height: 330px;
+    border-radius: 15px;
+    color: var(--lightCyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+    text-align: center;
+}
+
+.card-title {
+    color: var(--neonGreen);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.card-content {
+    font-size: 28px;
+    font-weight: 800;
+    text-overflow: ellipsis;
+}
+
+.dice {
+    background-color: var(--neonGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    margin-bottom: -32px;
+    border-radius: 100%;
+}
+
+.dice:hover {
+    background-color: var(--neonGreen);
+    box-shadow: 0px 0px 40px var(--neonGreen);
+    cursor: pointer;
+}
